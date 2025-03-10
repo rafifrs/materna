@@ -51,7 +51,7 @@ export default function ResikoDesktop({idResikoPasien} : ResikoPasien) {
                 onClick={() => setIsOpen(!isOpen)}
                 className='text-white px-4 py-2 rounded-xl flex justify-between gap-2 w-full'
                 style={{ backgroundColor: selected.color }}>
-                {selected.name} <img src='/drop-down.png' className='pl-1 w-6 h-6'></img>
+                {selected.name} <img src='/drop-down.svg' className='pl-1 w-6 h-6'></img>
             </button>
 
             {isOpen && (

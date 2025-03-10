@@ -26,7 +26,7 @@ export default function NavbarDesktop({name, nip, image}: UserProps) {
                 <button
                     className='size-12 rounded-md place-items-center'
                     onClick={() => setIsOpen(!isOpen)}>
-                    <img src="/toggle-icon.png" alt="toggle-icon" />
+                    <img src="/toggle-icon.svg" alt="toggle-icon" />
                 </button>
 
                 {/*Title Puskesmas*/}
@@ -54,10 +54,10 @@ export default function NavbarDesktop({name, nip, image}: UserProps) {
                 transform transition-all ease-in-out
                 ${isOpen ? 'opacity-100 max-w-full delay-200 duration-300 pl-12' : 'place-items-center'}`}>                    
                     <nav>
-                        <ul className='flex flex-col space-y-5 text-lg font-semibold'>
-                            <li> <a href="/homepage"> {isOpen ? 'Beranda' : <img src='/homepage-icon.png' alt="homepage-icon"/>} </a> </li>
-                            <li> <a href="/patientlist"> {isOpen ? 'Daftar Pasien' : <img src='/patient-icon.png' alt="patient-icon"/>} </a> </li>
-                            <li> <a href="/schedule"> {isOpen ? 'Jadwal' : <img src='/schedule-icon.png' alt="schedule-icon"/>} </a>  </li>
+                        <ul className='flex flex-col space-y-10 text-lg font-semibold'>
+                            <li> <a href="/homepage"> {isOpen ? 'Beranda' : <img src='/homepage-icon.svg' alt="homepage-icon"/>} </a> </li>
+                            <li> <a href="/patientlist"> {isOpen ? 'Daftar Pasien' : <img src='/patient-icon.svg' alt="patient-icon" className='ml-[1px]'/>} </a> </li>
+                            <li> <a href="/schedule"> {isOpen ? 'Jadwal' : <img src='/schedule-icon.svg' alt="schedule-icon"/>} </a>  </li>
                         </ul>
                     </nav>
             </div>
