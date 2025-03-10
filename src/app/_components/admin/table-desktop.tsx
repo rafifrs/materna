@@ -17,7 +17,7 @@ export default function TableDesktop({data}: TableDesktopProps) {
 
     return(
         <div className='overflow-x-auto p-5'>
-            <table className='min-w-full border bg-white rounded-xl overflow-hidden'>
+            <table className='min-w-full border bg-white rounded-xl overflow-auto'>
                 {/*Table Header*/}
                 <thead>
                     <tr className='bg-[#FFF9C2] text-center'>
@@ -39,7 +39,7 @@ export default function TableDesktop({data}: TableDesktopProps) {
                                         <ResikoDesktop idResikoPasien={row[col.key]}/>
                                     ) : col.key === 'ket' ? (
                                         <button className='flex bg-[#41C7D0] px-6 py-2 rounded-xl text-white hover:bg-cyan-600'>
-                                            Detail <a href='/todata'><img src='/right-arrow.png' className='pl-1 w-6 h-6' alt='detail-button'/></a>
+                                            Detail <a href='/todata'><img src='/right-arrow.svg' className='pl-1 w-6 h-6' alt='detail-button'/></a>
                                         </button>
                                     ) : (
                                         row[col.key]
