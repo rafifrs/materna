@@ -8,7 +8,7 @@ interface HistoryUserProps {
 
 function HistoryUser({faskes, nakes, resiko}: HistoryUserProps) {
     return (
-        <div className="w-full px-8 bg-[#FFFCE1] rounded-[12px] mt-6 py-6 relative overflow-hidden">
+        <div className="w-full px-8 ml-4 mr-4 bg-[#FFFCE1] rounded-[12px] mt-6 py-6 relative overflow-hidden">
             <div className="absolute h-full w-1/12 bg-[#FFD879] rounded-full -inset-x-2 -inset-y-0 -z-1"></div>
             
             {/* fasilitas kesehatan */}
@@ -26,10 +26,6 @@ function HistoryUser({faskes, nakes, resiko}: HistoryUserProps) {
 
             {/* Menu */}
             <div className="flex w-full justify-between">
-                {/* resiko */}
-                <div className="flex px-6 py-2 bg-[#FFD879] font-bold rounded-full">
-                    Resiko Rendah
-                </div>
 
                 {/* detail */}
                 <button className="flex px-6 py-2 bg-[#FFD879] font-bold rounded-full">
