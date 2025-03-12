@@ -3,6 +3,7 @@ import { auth } from "~/server/auth";
 import { api, HydrateClient } from "~/trpc/server";
 import { NavbarUser } from "~/app/_components/user/navbar-user";
 import TaskItem from "./_components/user/daily-task";
+import AdsSlider from "./_components/user/ads-slider";
 
 export default async function Home() {
   const hello = await api.post.hello({ text: "from tRPC" });
@@ -19,6 +20,7 @@ export default async function Home() {
         <TaskItem text="Daily Task 2" />
         <TaskItem text="Daily Task 3" />
       </div>
+      <AdsSlider />
       <NavbarUser />
     </div>
   );
